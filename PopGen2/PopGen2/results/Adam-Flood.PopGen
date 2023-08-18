@@ -1,0 +1,38 @@
+Iterate_Interval = 0.1; // iterate this many times per year. 
+Results_Prefix = "H:\\Docs\\Chris\\My_Code\\PopGen2\\results\\";
+Samples_Per_Permutation = 100;
+MS_Between_Iteration_Breaks = 100; // let windows get in & do stuff this often.
+Stop_Iterating_After_Year = 1656;
+Stop_Iterating_After_Pop = 3000;
+Initial_Couples = 1;
+Minimum_Gestation = 0.8; // years after marriage before child can be born.
+Initial_Annual_Pregnancy_Probability = 0.88;
+CB_Years_at_Init_Pregnancy_Probability = 10;
+Death_in_Childbirth_Probability = 0.001;
+Death_Bearing_Twins_Probability = 0.01;
+Twin_Probability = 0.01111;
+Probability_Baby_is_Male = 0.51;
+First_Marriage_Probability_Per_Year = 0.5;
+Second_Marriage_Probability_Per_Year = 0.01; // keep these even if doing a monogamous-only sim. Just set Max_Wives to 1.
+Third_Plus_Marriage_Probability_Per_Year = 0.05;
+Max_Wives = 1;  // the most wives any guy can have at one time. (1=purely monogamous simulation)
+Man_Too_Old_to_Marry = 400; // he can keep having kids, but no more new wives after this age.
+Fema.Max_Age = 1300; // only 5% will reach 80% of this
+Fema.Mortality_while_0 = 0.0011;
+Fema.Mortality_while_1 = 0.00005;
+Fema.Mortality_while_10 = 0.00002;
+Fema.Mortality_while_950 = 0.214;
+Male.Max_Age = 1200;
+Male.Mortality_while_0 = 0.0012;
+Male.Mortality_while_1 = 0.00006;
+Male.Mortality_while_10 = 0.00002;
+Male.Mortality_while_950 = 0.264;
+
+
+Fema.Min_CBA = { 14, 15, 16, 18, 20, 22, 24, 27, 30, 34, 39, 45, 52, 60 }; 
+Fema.Max_CBA = Fema.Min_CBA + 400;
+Male.Min_CBA = Fema.Min_CBA;
+Male.Max_CBA = Male.Max_Age;
+Min_Gap_Between_Children = { 0.9, 1.0, 1.2, 1.5, 1.9, 2.4, 3.0, 3.7, 4.5, 5.4, 6.4, 7.5, 8.7, 10.0, 11.4, 12.9, 14.5, 16.2, 18, 20, 23, 27, 32, 38, 45, 53, 62 };
+Report_Pop_at_Date = { 100, 300, 1000, 1656 };
+Report_Date_at_Pop = { 1000, 10000, 100000, 1000000, 7000000000 };
